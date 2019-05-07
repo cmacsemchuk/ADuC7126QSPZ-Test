@@ -1,0 +1,12 @@
+Dependencies for Project 'CBlinky', Target 'ADuC7128': (DO NOT MODIFY !)
+F (.\ADuC712x.s)(0x559D9324)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI--pd "__UVISION_VERSION SETA 527"-o .\output\aduc712x.o --depend .\output\aduc712x.d)
+F (.\main.c)(0x5CD1A6DC)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\output\main.o --depend .\output\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
+I (C:\Keil_v5\ARM\INC\ADI\ADuC7126.H)(0x559D91AC)
+F (.\Retarget.c)(0x559D9324)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\output\retarget.o --depend .\output\retarget.d)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x599F83FE)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599F83FC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F83FE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F83FC)
+I (C:\Keil_v5\ARM\INC\ADI\ADuC7128.H)(0x559D91AC)
+F (.\irq_arm.c)(0x559D91AA)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\output\irq_arm.o --depend .\output\irq_arm.d)
