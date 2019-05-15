@@ -342,12 +342,12 @@ Image Symbol Table
     init.s                                   0x00000000   Number         0  init.o ABSOLUTE
     irq_arm.c                                0x00000000   Number         0  irq_arm.o ABSOLUTE
     main.c                                   0x00000000   Number         0  main.o ABSOLUTE
-    .data                                    0x00040000   Section        4  main.o(.data)
-    ulLoop                                   0x00040000   Data           4  main.o(.data)
-    .data                                    0x00040004   Section       24  irq_arm.o(.data)
-    .data                                    0x0004001c   Section        4  stdout.o(.data)
-    STACK                                    0x00040020   Section     1664  aduc712x.o(STACK)
-    Stack_Top                                0x000406a0   Data           0  aduc712x.o(STACK)
+    .data                                    0x00040000   Section       20  main.o(.data)
+    ulLoop                                   0x00040010   Data           4  main.o(.data)
+    .data                                    0x00040014   Section       24  irq_arm.o(.data)
+    .data                                    0x0004002c   Section        4  stdout.o(.data)
+    STACK                                    0x00040030   Section     1664  aduc712x.o(STACK)
+    Stack_Top                                0x000406b0   Data           0  aduc712x.o(STACK)
     RESET                                    0x00080000   Section      148  aduc712x.o(RESET)
     .ARM.Collect$$$$00000000                 0x00080094   Section        0  entry.o(.ARM.Collect$$$$00000000)
     .ARM.Collect$$$$00000001                 0x00080094   Section        4  entry2.o(.ARM.Collect$$$$00000001)
@@ -360,15 +360,15 @@ Image Symbol Table
     .ARM.Collect$$$$00002712                 0x000800a8   Section        4  entry2.o(.ARM.Collect$$$$00002712)
     __lit__00000000                          0x000800a8   Data           4  entry2.o(.ARM.Collect$$$$00002712)
     .text                                    0x000800ac   Section        0  main.o(.text)
-    .text                                    0x00080258   Section        0  retarget.o(.text)
-    .text                                    0x000802e0   Section        0  irq_arm.o(.text)
-    .text                                    0x00080400   Section       48  init.o(.text)
-    i.__0printf$bare                         0x00080430   Section        0  printfb.o(i.__0printf$bare)
-    i.__scatterload_copy                     0x00080444   Section       28  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x00080460   Section        4  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x00080464   Section       24  handlers.o(i.__scatterload_zeroinit)
-    i._printf_core                           0x0008047c   Section        0  printfb.o(i._printf_core)
-    _printf_core                             0x0008047c   ARM Code      64  printfb.o(i._printf_core)
+    .text                                    0x00080304   Section        0  retarget.o(.text)
+    .text                                    0x0008038c   Section        0  irq_arm.o(.text)
+    .text                                    0x000804ac   Section       48  init.o(.text)
+    i.__0printf$bare                         0x000804dc   Section        0  printfb.o(i.__0printf$bare)
+    i.__scatterload_copy                     0x000804f0   Section       28  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x0008050c   Section        4  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00080510   Section       24  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x00080528   Section        0  printfb.o(i._printf_core)
+    _printf_core                             0x00080528   ARM Code      64  printfb.o(i._printf_core)
 
     Global Symbols
 
@@ -389,14 +389,19 @@ Image Symbol Table
     __decompress                              - Undefined Weak Reference
     _clock_init                               - Undefined Weak Reference
     _microlib_exit                            - Undefined Weak Reference
-    IRQ                                      0x00040004   Data           4  irq_arm.o(.data)
-    SWI                                      0x00040008   Data           4  irq_arm.o(.data)
-    FIQ                                      0x0004000c   Data           4  irq_arm.o(.data)
-    UNDEF                                    0x00040010   Data           4  irq_arm.o(.data)
-    PABORT                                   0x00040014   Data           4  irq_arm.o(.data)
-    DABORT                                   0x00040018   Data           4  irq_arm.o(.data)
-    __stdout                                 0x0004001c   Data           4  stdout.o(.data)
-    __initial_sp                             0x00040420   Data         640  aduc712x.o(STACK)
+    szTxData                                 0x00040000   Data           6  main.o(.data)
+    ucTxCount                                0x00040006   Data           1  main.o(.data)
+    szRxData                                 0x00040007   Data           6  main.o(.data)
+    ucRxCount                                0x0004000d   Data           1  main.o(.data)
+    ucWaitingForXIRQ0                        0x0004000e   Data           1  main.o(.data)
+    IRQ                                      0x00040014   Data           4  irq_arm.o(.data)
+    SWI                                      0x00040018   Data           4  irq_arm.o(.data)
+    FIQ                                      0x0004001c   Data           4  irq_arm.o(.data)
+    UNDEF                                    0x00040020   Data           4  irq_arm.o(.data)
+    PABORT                                   0x00040024   Data           4  irq_arm.o(.data)
+    DABORT                                   0x00040028   Data           4  irq_arm.o(.data)
+    __stdout                                 0x0004002c   Data           4  stdout.o(.data)
+    __initial_sp                             0x00040430   Data         640  aduc712x.o(STACK)
     Reset_Handler                            0x00080040   ARM Code       0  aduc712x.o(RESET)
     __main                                   0x00080094   ARM Code       0  entry.o(.ARM.Collect$$$$00000000)
     _main_stk                                0x00080094   ARM Code       0  entry2.o(.ARM.Collect$$$$00000001)
@@ -412,26 +417,27 @@ Image Symbol Table
     InterruptIRQHndlr                        0x0008011c   ARM Code      44  main.o(.text)
     ConfigureTimer2                          0x00080148   ARM Code      56  main.o(.text)
     ConfigUART9600                           0x00080180   ARM Code     108  main.o(.text)
-    main                                     0x000801ec   ARM Code      44  main.o(.text)
-    _sys_exit                                0x00080258   ARM Code       8  retarget.o(.text)
-    fputc                                    0x00080260   ARM Code      80  retarget.o(.text)
-    fgetc                                    0x000802b0   ARM Code      40  retarget.o(.text)
-    IRQ_Handler                              0x000802e0   ARM Code      44  irq_arm.o(.text)
-    FIQ_Handler                              0x0008030c   ARM Code      44  irq_arm.o(.text)
-    SWI_Handler                              0x00080338   ARM Code      44  irq_arm.o(.text)
-    Undef_Handler                            0x00080364   ARM Code      44  irq_arm.o(.text)
-    PAbt_Handler                             0x00080390   ARM Code      44  irq_arm.o(.text)
-    DAbt_Handler                             0x000803bc   ARM Code      44  irq_arm.o(.text)
-    __scatterload                            0x00080400   ARM Code      40  init.o(.text)
-    __scatterload_rt2                        0x00080400   ARM Code       0  init.o(.text)
-    __0printf$bare                           0x00080430   ARM Code      12  printfb.o(i.__0printf$bare)
-    __1printf$bare                           0x00080430   ARM Code       0  printfb.o(i.__0printf$bare)
-    __2printf                                0x00080430   ARM Code       0  printfb.o(i.__0printf$bare)
-    __scatterload_copy                       0x00080444   ARM Code      28  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x00080460   ARM Code       4  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x00080464   ARM Code      24  handlers.o(i.__scatterload_zeroinit)
-    Region$$Table$$Base                      0x000804bc   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x000804dc   Number         0  anon$$obj.o(Region$$Table)
+    ConfigI2C                                0x000801ec   ARM Code      52  main.o(.text)
+    main                                     0x00080220   ARM Code     144  main.o(.text)
+    _sys_exit                                0x00080304   ARM Code       8  retarget.o(.text)
+    fputc                                    0x0008030c   ARM Code      80  retarget.o(.text)
+    fgetc                                    0x0008035c   ARM Code      40  retarget.o(.text)
+    IRQ_Handler                              0x0008038c   ARM Code      44  irq_arm.o(.text)
+    FIQ_Handler                              0x000803b8   ARM Code      44  irq_arm.o(.text)
+    SWI_Handler                              0x000803e4   ARM Code      44  irq_arm.o(.text)
+    Undef_Handler                            0x00080410   ARM Code      44  irq_arm.o(.text)
+    PAbt_Handler                             0x0008043c   ARM Code      44  irq_arm.o(.text)
+    DAbt_Handler                             0x00080468   ARM Code      44  irq_arm.o(.text)
+    __scatterload                            0x000804ac   ARM Code      40  init.o(.text)
+    __scatterload_rt2                        0x000804ac   ARM Code       0  init.o(.text)
+    __0printf$bare                           0x000804dc   ARM Code      12  printfb.o(i.__0printf$bare)
+    __1printf$bare                           0x000804dc   ARM Code       0  printfb.o(i.__0printf$bare)
+    __2printf                                0x000804dc   ARM Code       0  printfb.o(i.__0printf$bare)
+    __scatterload_copy                       0x000804f0   ARM Code      28  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x0008050c   ARM Code       4  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00080510   ARM Code      24  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x00080568   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00080588   Number         0  anon$$obj.o(Region$$Table)
 
 
 
@@ -441,42 +447,42 @@ Memory Map of the image
 
   Image Entry point : 0x00080094
 
-  Load Region LR_IROM1 (Base: 0x00080000, Size: 0x000004fc, Max: 0x0001f800, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00080000, Size: 0x000005b8, Max: 0x0001f800, ABSOLUTE)
 
-    Execution Region RW_IRAM1 (Exec base: 0x00040000, Load base: 0x000804dc, Size: 0x000006a0, Max: 0x00008000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x00040000, Load base: 0x00080588, Size: 0x000006b0, Max: 0x00008000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00040000   0x000804dc   0x00000004   Data   RW            9    .data               main.o
-    0x00040004   0x000804e0   0x00000018   Data   RW           61    .data               irq_arm.o
-    0x0004001c   0x000804f8   0x00000004   Data   RW          350    .data               mc_4.l(stdout.o)
-    0x00040020        -       0x00000680   Zero   RW            1    STACK               aduc712x.o
+    0x00040000   0x00080588   0x00000014   Data   RW            9    .data               main.o
+    0x00040014   0x0008059c   0x00000018   Data   RW           62    .data               irq_arm.o
+    0x0004002c   0x000805b4   0x00000004   Data   RW          351    .data               mc_4.l(stdout.o)
+    0x00040030        -       0x00000680   Zero   RW            1    STACK               aduc712x.o
 
 
-    Execution Region ER_IROM1 (Exec base: 0x00080000, Load base: 0x00080000, Size: 0x000004dc, Max: 0x0001f800, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x00080000, Load base: 0x00080000, Size: 0x00000588, Max: 0x0001f800, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x00080000   0x00080000   0x00000094   Code   RO            3    RESET               aduc712x.o
-    0x00080094   0x00080094   0x00000000   Code   RO           74  * .ARM.Collect$$$$00000000  mc_4.l(entry.o)
-    0x00080094   0x00080094   0x00000004   Code   RO          337    .ARM.Collect$$$$00000001  mc_4.l(entry2.o)
-    0x00080098   0x00080098   0x00000004   Code   RO          339    .ARM.Collect$$$$00000004  mc_4.l(entry5.o)
-    0x0008009c   0x0008009c   0x00000000   Code   RO          341    .ARM.Collect$$$$00000008  mc_4.l(entry7b.o)
-    0x0008009c   0x0008009c   0x00000000   Code   RO          343    .ARM.Collect$$$$0000000A  mc_4.l(entry8b.o)
-    0x0008009c   0x0008009c   0x0000000c   Code   RO          344    .ARM.Collect$$$$0000000B  mc_4.l(entry9a.o)
-    0x000800a8   0x000800a8   0x00000000   Code   RO          346    .ARM.Collect$$$$0000000D  mc_4.l(entry10a.o)
-    0x000800a8   0x000800a8   0x00000000   Code   RO          348    .ARM.Collect$$$$0000000F  mc_4.l(entry11a.o)
-    0x000800a8   0x000800a8   0x00000004   Code   RO          338    .ARM.Collect$$$$00002712  mc_4.l(entry2.o)
-    0x000800ac   0x000800ac   0x000001ac   Code   RO            8    .text               main.o
-    0x00080258   0x00080258   0x00000088   Code   RO           31    .text               retarget.o
-    0x000802e0   0x000802e0   0x00000120   Code   RO           60    .text               irq_arm.o
-    0x00080400   0x00080400   0x00000030   Code   RO          366    .text               mc_4.l(init.o)
-    0x00080430   0x00080430   0x00000014   Code   RO           78    i.__0printf$bare    mc_4.l(printfb.o)
-    0x00080444   0x00080444   0x0000001c   Code   RO          380    i.__scatterload_copy  mc_4.l(handlers.o)
-    0x00080460   0x00080460   0x00000004   Code   RO          381    i.__scatterload_null  mc_4.l(handlers.o)
-    0x00080464   0x00080464   0x00000018   Code   RO          382    i.__scatterload_zeroinit  mc_4.l(handlers.o)
-    0x0008047c   0x0008047c   0x00000040   Code   RO           85    i._printf_core      mc_4.l(printfb.o)
-    0x000804bc   0x000804bc   0x00000020   Data   RO          378    Region$$Table       anon$$obj.o
+    0x00080094   0x00080094   0x00000000   Code   RO           75  * .ARM.Collect$$$$00000000  mc_4.l(entry.o)
+    0x00080094   0x00080094   0x00000004   Code   RO          338    .ARM.Collect$$$$00000001  mc_4.l(entry2.o)
+    0x00080098   0x00080098   0x00000004   Code   RO          340    .ARM.Collect$$$$00000004  mc_4.l(entry5.o)
+    0x0008009c   0x0008009c   0x00000000   Code   RO          342    .ARM.Collect$$$$00000008  mc_4.l(entry7b.o)
+    0x0008009c   0x0008009c   0x00000000   Code   RO          344    .ARM.Collect$$$$0000000A  mc_4.l(entry8b.o)
+    0x0008009c   0x0008009c   0x0000000c   Code   RO          345    .ARM.Collect$$$$0000000B  mc_4.l(entry9a.o)
+    0x000800a8   0x000800a8   0x00000000   Code   RO          347    .ARM.Collect$$$$0000000D  mc_4.l(entry10a.o)
+    0x000800a8   0x000800a8   0x00000000   Code   RO          349    .ARM.Collect$$$$0000000F  mc_4.l(entry11a.o)
+    0x000800a8   0x000800a8   0x00000004   Code   RO          339    .ARM.Collect$$$$00002712  mc_4.l(entry2.o)
+    0x000800ac   0x000800ac   0x00000258   Code   RO            8    .text               main.o
+    0x00080304   0x00080304   0x00000088   Code   RO           32    .text               retarget.o
+    0x0008038c   0x0008038c   0x00000120   Code   RO           61    .text               irq_arm.o
+    0x000804ac   0x000804ac   0x00000030   Code   RO          367    .text               mc_4.l(init.o)
+    0x000804dc   0x000804dc   0x00000014   Code   RO           79    i.__0printf$bare    mc_4.l(printfb.o)
+    0x000804f0   0x000804f0   0x0000001c   Code   RO          381    i.__scatterload_copy  mc_4.l(handlers.o)
+    0x0008050c   0x0008050c   0x00000004   Code   RO          382    i.__scatterload_null  mc_4.l(handlers.o)
+    0x00080510   0x00080510   0x00000018   Code   RO          383    i.__scatterload_zeroinit  mc_4.l(handlers.o)
+    0x00080528   0x00080528   0x00000040   Code   RO           86    i._printf_core      mc_4.l(printfb.o)
+    0x00080568   0x00080568   0x00000020   Data   RO          379    Region$$Table       anon$$obj.o
 
 
 ==============================================================================
@@ -488,11 +494,11 @@ Image component sizes
 
        148         40          0          0       1664        304   aduc712x.o
        288         24          0         24          0       1764   irq_arm.o
-       428         64          0          4          0       2828   main.o
+       600         84          0         20          0       3828   main.o
        136          8          0          0          0       2136   retarget.o
 
     ----------------------------------------------------------------------
-      1000        136         32         28       1664       7032   Object Totals
+      1172        156         32         44       1664       8032   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          0          0          0          0   (incl. Padding)
 
@@ -533,15 +539,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1212        160         32         32       1664       7248   Grand Totals
-      1212        160         32         32       1664       7248   ELF Image Totals
-      1212        160         32         32          0          0   ROM Totals
+      1384        180         32         48       1664       8248   Grand Totals
+      1384        180         32         48       1664       8248   ELF Image Totals
+      1384        180         32         48          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 1244 (   1.21kB)
-    Total RW  Size (RW Data + ZI Data)              1696 (   1.66kB)
-    Total ROM Size (Code + RO Data + RW Data)       1276 (   1.25kB)
+    Total RO  Size (Code + RO Data)                 1416 (   1.38kB)
+    Total RW  Size (RW Data + ZI Data)              1712 (   1.67kB)
+    Total ROM Size (Code + RO Data + RW Data)       1464 (   1.43kB)
 
 ==============================================================================
 
