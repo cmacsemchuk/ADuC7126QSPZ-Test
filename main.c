@@ -143,23 +143,25 @@ void ConfigI2C(void)
 // Revision    : 13.12.2005 - Initial
 int main(void)
 {   
-   GP4CON = 0x0;
-   GP4DAT = DIR_VAL;
+   //GP4CON = 0x0;
+   //GP4DAT = DIR_VAL;
 
    // Configure the UART before calling printf.
-   ConfigUART9600();
+   //ConfigUART9600();
    ConfigI2C();
    ucTxCount = 0;
 	I2C0FSTA = BIT9;			// Flush Master Tx FIFO
 	I2C0FSTA &= ~BIT9;
-	I2C0MTX = szTxData[ucTxCount++];
+	//I2C0MTX = szTxData[ucTxCount++];
+	I2C0MTX = 0x25;
 	I2C0ADR0 = 0x45; 
+	
 
 
-   printf("\n\nADuC712x RealView Example Program\n");
+   //printf("\n\nADuC712x RealView Example Program\n");
 
    // Toggle the leds based on timer interrupt
-   ConfigureTimer2();
-   while (1) ; // loop
+   //ConfigureTimer2();
+   //while (1) ; // loop
 }
 
