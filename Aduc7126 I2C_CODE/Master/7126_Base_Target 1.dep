@@ -1,5 +1,5 @@
 Dependencies for Project '7126_Base', Target 'Target 1': (DO NOT MODIFY !)
-F (.\ADuC712x.s)(0x51F1819C)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI--pd "__UVISION_VERSION SETA 527"--list .\aduc712x.lst --xref -o .\aduc712x.o --depend .\aduc712x.d)
-F (.\I2CTestMaster.c)(0x52CDAC06)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\i2ctestmaster.o --omf_browse .\i2ctestmaster.crf --depend .\i2ctestmaster.d)
-I (C:\Keil_v5\ARM\INC\ADI\aduc7126.h)(0x559D91AC)
-F (C:\Keil_v5\ARM\INC\ADI\ADuC7126.h)(0x559D91AC)()
+F (.\ADuC712x.s)(0x5CDEC71E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI--pd "__UVISION_VERSION SETA 527"--list .\aduc712x.lst --xref -o .\aduc712x.o --depend .\aduc712x.d)
+F (.\I2CTestMaster.c)(0x5CDEC71E)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\i2ctestmaster.o --omf_browse .\i2ctestmaster.crf --depend .\i2ctestmaster.d)
+I (C:\Keil_v5\ARM\INC\ADI\aduc7126.h)(0x559D839C)
+F (C:\Keil_v5\ARM\INC\ADI\ADuC7126.h)(0x559D839C)()

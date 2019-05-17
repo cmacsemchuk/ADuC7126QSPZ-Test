@@ -1,0 +1,9 @@
+--cpu ARM7TDMI
+".\output\aduc712x.o"
+".\output\main.o"
+".\output\retarget.o"
+".\output\irq_arm.o"
+--library_type=microlib --strict --scatter ".\Output\CBlinky.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Output\CBlinky.map" -o .\Output\CBlinky.axf
