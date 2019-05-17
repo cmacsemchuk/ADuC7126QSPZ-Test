@@ -1,0 +1,5 @@
+--cpu ARM7TDMI "aduc712x.o" "i2ctestslave.o" 
+--strict --scatter "7126_i2c Slave.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\7126_i2c Slave.map" -o "7126_i2c Slave.axf"

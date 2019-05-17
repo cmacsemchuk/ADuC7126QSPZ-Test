@@ -1,0 +1,21 @@
+*** Creating Trace Output File '7126_i2c Slave.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"aduc712x.o"'
+### List of Objects: adding '"i2ctestslave.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "aduc712x.o" "i2ctestslave.o" 
+--strict --scatter "7126_i2c Slave.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\7126_i2c Slave.map" -o "7126_i2c Slave.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '7126_i2c Slave.axf'
+### ADS-LD Command File: '7126_i2c Slave.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '7126_i2c Slave.lnp', Handle=0x000003FC
+### Writing '.lnp' file
+### ADS-LD Command file '7126_i2c Slave.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

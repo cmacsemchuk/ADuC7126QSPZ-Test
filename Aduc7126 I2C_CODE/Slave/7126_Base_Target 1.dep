@@ -1,0 +1,4 @@
+Dependencies for Project '7126_Base', Target 'Target 1': (DO NOT MODIFY !)
+F (.\ADuC712x.s)(0x51CBF120)(--cpu ARM7TDMI -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ADI --list "ADuC712x.lst" --xref -o "ADuC712x.o" --depend "ADuC712x.d")
+F (.\I2CTestSlave.c)(0x52CCF50C)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ADI -o "i2ctestslave.o" --omf_browse "i2ctestslave.crf" --depend "i2ctestslave.d")
+I (C:\Keil\ARM\Inc\ADI\aduc7126.h)(0x5086AA6A)

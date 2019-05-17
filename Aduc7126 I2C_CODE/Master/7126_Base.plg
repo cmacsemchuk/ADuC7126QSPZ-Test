@@ -1,0 +1,139 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Documents and Settings\Administrator\®à­±\7126_base\7126_base\7126_Base.uvproj
+Project File Date:  03/26/2013
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling ADuC712x.s...
+compiling 00_7126_Base.C...
+00_7126_Base.C(140): error:  #20: identifier "POWCON" is undefined
+00_7126_Base.C(174): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(175): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(176): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(202): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(203): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(204): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(207): error:  #20: identifier "FEEDAT" is undefined
+00_7126_Base.C(212): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(213): error:  #20: identifier "FEEDAT" is undefined
+00_7126_Base.C(214): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(215): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(272): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(274): error:  #20: identifier "COMRX" is undefined
+00_7126_Base.C(379): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(380): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(383): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(384): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(396): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(397): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(400): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(401): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(417): error:  #20: identifier "COMIEN0" is undefined
+00_7126_Base.C(418): error:  #20: identifier "COMCON0" is undefined
+00_7126_Base.C(420): error:  #20: identifier "COMDIV0" is undefined
+00_7126_Base.C(421): error:  #20: identifier "COMDIV1" is undefined
+00_7126_Base.C(425): error:  #20: identifier "COMDIV2" is undefined
+00_7126_Base.C(878): error:  #20: identifier "I2C1CFG" is undefined
+00_7126_Base.C(880): error:  #20: identifier "FEEMOD" is undefined
+Target not created
+Rebuild target 'Target 1'
+assembling ADuC712x.s...
+compiling 00_7126_Base.C...
+00_7126_Base.C(140): error:  #20: identifier "POWCON" is undefined
+00_7126_Base.C(174): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(175): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(176): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(202): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(203): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(204): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(207): error:  #20: identifier "FEEDAT" is undefined
+00_7126_Base.C(212): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(213): error:  #20: identifier "FEEDAT" is undefined
+00_7126_Base.C(214): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(215): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(272): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(274): error:  #20: identifier "COMRX" is undefined
+00_7126_Base.C(379): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(380): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(383): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(384): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(396): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(397): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(400): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(401): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(417): error:  #20: identifier "COMIEN0" is undefined
+00_7126_Base.C(418): error:  #20: identifier "COMCON0" is undefined
+00_7126_Base.C(420): error:  #20: identifier "COMDIV0" is undefined
+00_7126_Base.C(421): error:  #20: identifier "COMDIV1" is undefined
+00_7126_Base.C(425): error:  #20: identifier "COMDIV2" is undefined
+00_7126_Base.C(878): error:  #20: identifier "I2C1CFG" is undefined
+00_7126_Base.C(880): error:  #20: identifier "FEEMOD" is undefined
+Target not created
+Rebuild target 'Target 1'
+assembling ADuC712x.s...
+compiling 00_7126_Base.C...
+00_7126_Base.C(174): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(175): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(176): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(202): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(203): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(204): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(207): error:  #20: identifier "FEEDAT" is undefined
+00_7126_Base.C(212): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(213): error:  #20: identifier "FEEDAT" is undefined
+00_7126_Base.C(214): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(215): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(272): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(274): error:  #20: identifier "COMRX" is undefined
+00_7126_Base.C(379): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(380): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(383): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(384): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(396): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(397): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(400): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(401): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(417): error:  #20: identifier "COMIEN0" is undefined
+00_7126_Base.C(418): error:  #20: identifier "COMCON0" is undefined
+00_7126_Base.C(420): error:  #20: identifier "COMDIV0" is undefined
+00_7126_Base.C(421): error:  #20: identifier "COMDIV1" is undefined
+00_7126_Base.C(425): error:  #20: identifier "COMDIV2" is undefined
+00_7126_Base.C(878): error:  #20: identifier "I2C1CFG" is undefined
+00_7126_Base.C(880): error:  #20: identifier "FEEMOD" is undefined
+Target not created
+Rebuild target 'Target 1'
+assembling ADuC712x.s...
+compiling 00_7126_Base.C...
+00_7126_Base.C(174): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(175): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(176): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(202): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(203): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(204): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(207): error:  #20: identifier "FEEDAT" is undefined
+00_7126_Base.C(212): error:  #20: identifier "FEEADR" is undefined
+00_7126_Base.C(213): error:  #20: identifier "FEEDAT" is undefined
+00_7126_Base.C(214): error:  #20: identifier "FEECON" is undefined
+00_7126_Base.C(215): error:  #20: identifier "FEESTA" is undefined
+00_7126_Base.C(272): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(274): error:  #20: identifier "COMRX" is undefined
+00_7126_Base.C(379): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(380): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(383): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(384): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(396): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(397): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(400): error:  #20: identifier "COMSTA0" is undefined
+00_7126_Base.C(401): error:  #20: identifier "COMTX" is undefined
+00_7126_Base.C(417): error:  #20: identifier "COMIEN0" is undefined
+00_7126_Base.C(418): error:  #20: identifier "COMCON0" is undefined
+00_7126_Base.C(420): error:  #20: identifier "COMDIV0" is undefined
+00_7126_Base.C(421): error:  #20: identifier "COMDIV1" is undefined
+00_7126_Base.C(425): error:  #20: identifier "COMDIV2" is undefined
+00_7126_Base.C(878): error:  #20: identifier "I2C1CFG" is undefined
+00_7126_Base.C(880): error:  #20: identifier "FEEMOD" is undefined
+Target not created
