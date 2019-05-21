@@ -15,7 +15,7 @@ void	Undef_Handler (void) __irq;
 void	PAbt_Handler  (void) __irq;
 void	DAbt_Handler  (void) __irq;
 
-
+/*
 void	IRQ_Handler(void) __irq
 {
 	if ( *IRQ !=0x00)
@@ -23,7 +23,7 @@ void	IRQ_Handler(void) __irq
 		IRQ();
 	}
 }
-
+*/
 void	FIQ_Handler(void) __irq
 {
 	if ( *FIQ !=0x00)

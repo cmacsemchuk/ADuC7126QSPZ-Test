@@ -152,7 +152,7 @@
         <periodic>0</periodic>
         <aLwin>1</aLwin>
         <aCover>0</aCover>
-        <aSer1>1</aSer1>
+        <aSer1>0</aSer1>
         <aSer2>0</aSer2>
         <aPa>0</aPa>
         <viewmode>1</viewmode>
@@ -162,12 +162,12 @@
         <AscS1>0</AscS1>
         <AscS2>0</AscS2>
         <AscS3>0</AscS3>
-        <aSer3>1</aSer3>
+        <aSer3>0</aSer3>
         <eProf>0</eProf>
         <aLa>0</aLa>
         <aPa1>0</aPa1>
         <AscS4>0</AscS4>
-        <aSer4>1</aSer4>
+        <aSer4>0</aSer4>
         <StkLoc>0</StkLoc>
         <TrcWin>0</TrcWin>
         <newCpu>0</newCpu>
@@ -187,10 +187,6 @@
       <pSingCmdsp></pSingCmdsp>
       <pMultCmdsp></pMultCmdsp>
       <SystemViewers>
-        <Entry>
-          <Name>System Viewer\ALL</Name>
-          <WinId>35903</WinId>
-        </Entry>
         <Entry>
           <Name>System Viewer\GPIO</Name>
           <WinId>35904</WinId>

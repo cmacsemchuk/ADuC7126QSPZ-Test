@@ -1,11 +1,12 @@
 Dependencies for Project 'CBlinky', Target 'ADuC7128': (DO NOT MODIFY !)
-F (.\ADuC712x.s)(0x5CDC66A6)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI--pd "__UVISION_VERSION SETA 527"-o .\output\aduc712x.o --depend .\output\aduc712x.d)
-F (.\main.c)(0x5CDEFB1C)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\output\main.o --depend .\output\main.d)
+F (.\ADuC712x.s)(0x5CDF16F4)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI--pd "__UVISION_VERSION SETA 527"-o .\output\aduc712x.o --depend .\output\aduc712x.d)
+F (.\main.c)(0x5CE4688D)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\output\main.o --depend .\output\main.d)
 I (C:\Keil_v5\ARM\INC\ADI\aduc7126.h)(0x559D839C)
-F (.\Retarget.c)(0x5CDC66A6)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\output\retarget.o --depend .\output\retarget.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F75EC)
+F (.\Retarget.c)(0x5CDF16F4)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\output\retarget.o --depend .\output\retarget.d)
 I (C:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x599F75EE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599F75EC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F75EE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F75EC)
 I (C:\Keil_v5\ARM\INC\ADI\ADuC7128.H)(0x559D839C)
-F (.\irq_arm.c)(0x5CDEFB1C)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\output\irq_arm.o --depend .\output\irq_arm.d)
+F (.\irq_arm.c)(0x5CE411E0)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ADI-D__UVISION_VERSION="527"-o .\output\irq_arm.o --depend .\output\irq_arm.d)

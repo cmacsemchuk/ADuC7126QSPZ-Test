@@ -30,8 +30,8 @@
 #define BIT15 0x8000
 
 #include<aduc7126.h>
-
-unsigned char szTxData[] = {0x41, 0x42, 0x43, 0x44, 0xd, 0x0a};	// Array to send to Slave
+#include<stdio.h>
+unsigned char szTxData[] = {0x24, 0x00, 0x45};	// Array to send to Slave
 unsigned char ucTxCount = 0;  // Array index variable for szTxData[]
 unsigned char szRxData[16];	  // Array for reading Data from Slave
 unsigned char ucRxCount = 0;  // Array index variable for szRxData[]
@@ -53,7 +53,7 @@ int main(void)
 	 								// Enable Tx interrupt + Enable transmission complete interrupt
 									// Enable Nack received IRQ
 
-	I2C0ADR0 = 0x45;				// Set slave address to transmit data to.
+	//I2C0ADR0 = 0xFF;				// Set slave address to transmit data to.
 	I2C0DIV  = 0xC0C0;				// Select  clock rate
 
 	// Begin Master Transmit sequence
@@ -63,14 +63,18 @@ int main(void)
 	IRQEN = 0x21200; 		// Enable I2C0M + XIRQ0 interrupt + uart
 
 	ucTxCount = 0;
+	//I2C0MTX = 0x24;
+	I2C0ADR0 = 0x8A;
+	
 	I2C0MTX = szTxData[ucTxCount++];
 	ucRxCount = 0;
+	printf("%s\n", "TEST");
 
 	while(1)
 	{  
 	}
 }
-/*
+
 void IRQ_Handler(void) __irq
 { 
  unsigned long IRQSTATUS = 0;
@@ -84,12 +88,12 @@ void IRQ_Handler(void) __irq
 
 	   if ((I2C0MSTATUS & BIT2) == BIT2) // If I2C Master Tx IRQ
 	   {
-			if (ucTxCount < 6)		   // Have max 6 bytes been sent?
+			if (ucTxCount < 2)		   // Have max 6 bytes been sent?
 				I2C0MTX = szTxData[ucTxCount++];	 // Load Tx buffer
 	   }
 	   if ((I2C0MSTATUS & BIT3) == BIT3) // If I2C Master Rx IRQ
 	   {
-			if (ucRxCount < 6)		   // Have max 6 bytes been received?
+			if (ucRxCount < 2)		   // Have max 6 bytes been received?
 			{
 				szRxData[ucRxCount] = I2C0MRX;  // Read Rx buffer
 				ucRxCount++;
@@ -97,4 +101,3 @@ void IRQ_Handler(void) __irq
 	   }
 	}
 }
-*/

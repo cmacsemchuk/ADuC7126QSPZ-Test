@@ -463,11 +463,11 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       208         52          0          0       2176        588   aduc712x.o
-       472         48          0          8         16       3043   i2ctestmaster.o
+       208         52          0          0       2176        580   aduc712x.o
+       472         48          0          8         16       3031   i2ctestmaster.o
 
     ----------------------------------------------------------------------
-       680        100         32          8       2192       3631   Object Totals
+       680        100         32          8       2192       3611   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          0          0          0          0   (incl. Padding)
 
@@ -516,8 +516,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1108        120         32          8       2288       4151   Grand Totals
-      1108        120         32          8       2288       4151   ELF Image Totals
+      1108        120         32          8       2288       4131   Grand Totals
+      1108        120         32          8       2288       4131   ELF Image Totals
       1108        120         32          8          0          0   ROM Totals
 
 ==============================================================================
